@@ -5,7 +5,7 @@ function LandingPage() {
   return (
     <>
       <div className="dark:text-white text-[0.7rem] sm:text-[1rem] flex flex-col items-center flex-grow my-3 gap-9 sm:gap-16 mb-32 duration-500">
-        <div className=" bg-contain bg-no-repeat dark:bg-[url('Logo-dark.svg')] bg-[url('Logo.svg')] h-44 w-44 sm:h-44  flex sm:w-44 p-0 "></div>
+        <div className=" bg-contain bg-no-repeat dark:bg-[url('/Logo-dark.svg')] bg-[url('/Logo.svg')] h-44 w-44 sm:h-44  flex sm:w-44 p-0 "></div>
         <div className="flex flex-col justify-center items-center max-w-[50rem] w-full px-4">
           <h1 className=" flex text-4xl sm:text-5xl font-bold text-center">
             Welcome to <p className="pl-2 underline animate-bounce duration-1000">UrlKitty!</p>

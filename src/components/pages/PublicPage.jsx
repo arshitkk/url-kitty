@@ -141,7 +141,7 @@ function PublicPage() {
           </div>
 
           <div className="  w-full h-fit py-9 flex flex-col items-center ">
-            <div className="border-1 border-black/20 shadow-lg p-[0.3rem] rounded-full">
+            <div className="border-2 border-black/20 shadow-lg p-[0.3rem] rounded-full">
               {" "}
               <img
                 className={` w-28 h-28 object-cover rounded-full `}

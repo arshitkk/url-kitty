@@ -56,7 +56,7 @@ function Header() {
       <div className=" flex items-center justify-center">
         <NavLink to={"/"}>
           {" "}
-          <div className="relative bg-contain bg-no-repeat dark:bg-[url('Logo-dark.svg')] bg-[url('Logo.svg')] h-12 w-12 "></div>
+          <div className="relative bg-contain bg-no-repeat dark:bg-[url('/Logo-dark.svg')] bg-[url('/Logo.svg')] h-12 w-12 "></div>
         </NavLink>
           <div className="shadow-xl absolute bg-black dark:bg-white h-6 w-[0.05rem] top-11 left-5"></div>
           <div className="  rounded-full absolute top-[4.26rem] left-[0.38rem]">

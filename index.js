@@ -1,6 +1,6 @@
 import Header from "./src/components/header/Header";
 import Footer from "./src/components/footer/Footer";
-import Container from "./src/components/Container/Container";
+import Container from "./src/components/container/Container";
 //Pages
 import LandingPage from "./src/components/pages/LandingPage";
 import SignUp from "./src/components/pages/SignUp";

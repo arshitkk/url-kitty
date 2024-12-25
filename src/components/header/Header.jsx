@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { supabase } from "../../supabase/config";
 import { FiLogOut } from "react-icons/fi";
-import DarkMode from "../pages/mini_component/darkMode";
+import DarkMode from "../pages/mini_component/DarkMode.jsx";
 function Header() {
   const [loggedIn, setLoggedIn] = useState(false);
   const navigate = useNavigate();

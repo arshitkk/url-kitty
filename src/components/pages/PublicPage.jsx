@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { supabase } from "../../supabase/config";
 import { socials } from "../data/socials";
-import DarkMode from "./mini_component/darkMode";
+import DarkMode from "./mini_component/DarkMode";
 import { NavLink } from "react-router-dom";
 
 function PublicPage() {

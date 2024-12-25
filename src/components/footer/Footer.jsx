@@ -14,7 +14,7 @@ function Footer() {
             arshitkumar222@gmail.com
           </a>
           <div className=" scale-75 flex gap-8">
-            <a href="https://www.x.com/arshitkk/">
+            <a href="https://www.x.com/arshitkk">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"

@@ -26,8 +26,11 @@ function SignUp() {
       .eq("username", info.username)
       .single(); // To fetch a single record
     if (usernameData) {
+      console.log(usernameData);
       setUsernameExist(true);
+      setSuccess(false);
     } else {
+      console.log(usernameData);
       setUsernameExist(false);
     }
     // Check if the email already exists in the database
@@ -39,25 +42,29 @@ function SignUp() {
 
     if (emailData) {
       setEmailExist(true);
+      setSuccess(false);
     } else {
       setEmailExist(false);
     }
     // If either username or email already exists, show an error
 
     // Proceed with the signup if no errors
-    const { data, error } = await signUp(
-      info.email,
-      info.password,
-      info.fullName,
-      info.username
-    );
-    if (error) {
-      alert(error.message); // Show any other errors
-      console.log(data, error);
-    } else {
-      console.log("User signed up successfully!", data);
-      setSuccess(true);
-    }
+    if (!usernameData && !emailData) {
+      const { data, error } = await signUp(
+        info.email,
+        info.password,
+        info.fullName,
+        info.username
+      );
+       if (error) {
+         alert(error.message); // Show any other errors
+         console.log(data, error);
+       } else {
+         console.log("User signed up successfully!", data);
+         setSuccess(true);
+       }
+}
+   
   };
 
   return (
@@ -101,6 +108,7 @@ function SignUp() {
               type="text"
               {...register("username", { required: "Username is required" })}
               placeholder="Enter your username"
+              onInput={(e) => (e.target.value = e.target.value.toLowerCase())}
             />
             {errors.username && (
               <p className="text-red-500 text-[0.7rem] mt-1">
@@ -192,7 +200,7 @@ function SignUp() {
         </form>
         <div className="flex items-center justify-center">
           {success && (
-            <p className=" text-green-400 text-center w-56 duration-300">
+            <p className=" text-green-600 dark:bg-green-400 text-center w-56 duration-300">
               Go to the you mail app (eg. Gmail) to confirm your e-Mail
             </p>
           )}

@@ -3,14 +3,17 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { signUp } from "../../supabase/authLogin";
 import { supabase } from "../../supabase/config";
-import { useNavigate } from "react-router-dom"; // Import Supabase client
+import { useNavigate } from "react-router-dom";
+import { FaEyeSlash } from "react-icons/fa6";
+import { FaEye } from "react-icons/fa";
 
 function SignUp() {
   const navigate = useNavigate();
   const [emailExist, setEmailExist] = useState(false);
   const [usernameExist, setUsernameExist] = useState(false);
+  const [loginLoader, setLoginLoader] = useState(false);
   const [success, setSuccess] = useState(false);
-
+  const [showPass, setShowPass] = useState(false);
   const {
     register,
     handleSubmit,
@@ -20,6 +23,7 @@ function SignUp() {
 
   const onSubmit = async (info) => {
     // Check if the username already exists in the database
+    setLoginLoader(true);
     const { data: usernameData, error: usernameError } = await supabase
       .from("links")
       .select("username")
@@ -56,15 +60,15 @@ function SignUp() {
         info.fullName,
         info.username
       );
-       if (error) {
-         alert(error.message); // Show any other errors
-         console.log(data, error);
-       } else {
-         console.log("User signed up successfully!", data);
-         setSuccess(true);
-       }
-}
-   
+      if (error) {
+        alert(error.message); // Show any other errors
+        console.log(data, error);
+      } else {
+        console.log("User signed up successfully!", data);
+        setSuccess(true);
+        setLoginLoader(false);
+      }
+    }
   };
 
   return (
@@ -151,20 +155,33 @@ function SignUp() {
 
           <label className="flex flex-col font-semibold text-[0.8rem] mb-4 dark:text-[#D1D5DB]">
             Password
-            <input
-              className="dark:text-[#9CA3AF] border dark:bg-[#374151] dark:border-[#374151] border-gray-300 rounded-sm p-2 pl-5 text-[0.7rem] dark:placeholder-[#6B7280] dark:outline-gray-900"
-              type="password"
-              {...register("password", {
-                required: "Password is required",
-                pattern: {
-                  value:
-                    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
-                  message:
-                    "Password must have at least 8 characters, one number, one uppercase, one lowercase, and one special character",
-                },
-              })}
-              placeholder="Enter your password"
-            />
+            <div className="w-full flex items-center">
+              <input
+                className="w-full dark:text-[#9CA3AF] border dark:bg-[#374151] dark:border-[#374151] border-gray-300 rounded-sm p-2 pl-5 text-[0.7rem] dark:placeholder-[#6B7280] dark:outline-gray-900"
+                type={showPass ? "text" : "password"}
+                {...register("password", {
+                  required: "Password is required",
+                  pattern: {
+                    value:
+                      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+                    message:
+                      "Password must have at least 8 characters, one number, one uppercase, one lowercase, and one special character",
+                  },
+                })}
+                placeholder="Enter your password"
+              />
+              {showPass ? (
+                <FaEye
+                  onClick={() => setShowPass((prev) => !prev)}
+                  className="absolute right-[2rem] cursor-pointer text-[1.06rem]"
+                />
+              ) : (
+                <FaEyeSlash
+                  onClick={() => setShowPass((prev) => !prev)}
+                  className="absolute right-[2rem] cursor-pointer text-[1.06rem]"
+                />
+              )}
+            </div>
             {errors.password && (
               <p className="text-red-500 text-[0.7rem] mt-1">
                 {errors.password.message}
@@ -174,16 +191,29 @@ function SignUp() {
 
           <label className="flex flex-col font-semibold text-[0.8rem] mb-4 dark:text-[#D1D5DB]">
             Confirm Password
-            <input
-              className="dark:text-[#9CA3AF] border dark:bg-[#374151] dark:border-[#374151] border-gray-300 rounded-sm p-2 pl-5 text-[0.7rem] dark:placeholder-[#6B7280] dark:outline-gray-900"
-              type="password"
-              {...register("confirmPassword", {
-                required: "Please confirm your password",
-                validate: (value) =>
-                  value === watch("password") || "Passwords do not match",
-              })}
-              placeholder="Confirm your password"
-            />
+            <div className="w-full flex items-center">
+              <input
+                className="w-full dark:text-[#9CA3AF] border dark:bg-[#374151] dark:border-[#374151] border-gray-300 rounded-sm p-2 pl-5 text-[0.7rem] dark:placeholder-[#6B7280] dark:outline-gray-900"
+                type={showPass ? "text" : "password"}
+                {...register("confirmPassword", {
+                  required: "Please confirm your password",
+                  validate: (value) =>
+                    value === watch("password") || "Passwords do not match",
+                })}
+                placeholder="Confirm your password"
+              />
+              {showPass ? (
+                <FaEye
+                  onClick={() => setShowPass((prev) => !prev)}
+                  className="absolute right-[2rem] cursor-pointer text-[1.06rem]"
+                />
+              ) : (
+                <FaEyeSlash
+                  onClick={() => setShowPass((prev) => !prev)}
+                  className="absolute right-[2rem] cursor-pointer text-[1.06rem]"
+                />
+              )}
+            </div>
             {errors.confirmPassword && (
               <p className="text-red-500 text-[0.7rem] mt-1">
                 {errors.confirmPassword.message}

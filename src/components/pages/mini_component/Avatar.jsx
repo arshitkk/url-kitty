@@ -85,14 +85,14 @@ function Avatar() {
   return (
     <div>
       {loading === true ? (
-        <div className={` m-0 shadow-xl w-24 h-24 object-cover rounded-full  `}>
+        <div className={`m-0 shadow-xl w-24 h-24 object-cover rounded-full  `}>
           <div
             className="flex items-center justify-center w-full h-full "
             role="status"
           >
             <svg
               aria-hidden="true"
-              className="w-8 h-8 text-gray-200  animate-spin dark:text-gray-400 fill-black"
+              className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-400 fill-black"
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

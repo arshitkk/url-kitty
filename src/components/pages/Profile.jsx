@@ -4,12 +4,13 @@ import Avatar from "./mini_component/Avatar";
 import AddSocialLink from "./mini_component/AddSocialLink";
 import AddCustomURL from "./mini_component/AddCustomURL";
 import RecentLinks from "./mini_component/RecentLinks";
-
+import { BsBoxArrowUpRight } from "react-icons/bs";
 function Profile() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [displayName, setDisplayName] = useState("");
+  const [username, setUsername] = useState("");
 
-// check user logged in or not
+  // check user logged in or not
   useEffect(() => {
     const fetchUser = async () => {
       const {
@@ -19,16 +20,16 @@ function Profile() {
       if (user) {
         setLoggedIn(true);
         setDisplayName(user.user_metadata.display_name);
+        setUsername(user.user_metadata.username);
         console.log("Logged In", user.user_metadata.display_name);
       } else {
         setLoggedIn(false);
         console.log("Logged Out");
       }
     };
+    console.log();
 
     fetchUser();
-
-
   }, []);
   return loggedIn ? (
     <div className="pl-2 m-5 mt-16  dark:text-white">
@@ -48,6 +49,16 @@ function Profile() {
               .map((name) => name.charAt(0).toUpperCase() + name.slice(1))
               .join(" ")}
           </h1>
+          <div className=" w-fit relative transition-all duration-300 group flex flex-col items-center justify-center  ">
+            <p className="text-start w-full text-[0.65rem]">your publlic page:</p>
+            <a className="cursor-pointer w-fit flex items-center justify-center gap-1 font-semibold border-2 border-black dark:border-white p-1 rounded-xl ">
+              <p>UrlKitty/{username}</p>
+              <BsBoxArrowUpRight />
+            </a>
+            <p className=" w-fit absolute text-sm h-fit top-[-1.8rem] shadow-lg shadow-black bg-green-400 text-black p-1 rounded-md duration-500 opacity-0 group-hover:opacity-100 font-semibold">
+              https://url&#8209;kitty.vercel.app/{username}
+            </p>
+          </div>
         </div>
       </div>
       <AddSocialLink />

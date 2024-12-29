@@ -23,6 +23,7 @@ function Login() {
         setInvalidCred(error);
         console.error(error);
         setLoginLoader(false);
+        setCredWarning(false)
         return;
       }
       else {

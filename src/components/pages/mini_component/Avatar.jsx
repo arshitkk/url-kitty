@@ -14,16 +14,22 @@ function Avatar() {
     const { data, error } = await supabase
       .from("links")
       .select("profile_url, username")
-      .eq("username", username); //it'll return the profile url and username only if usernames matches with the user
+      .eq("username", username)
+   
+    //it'll return the profile url and username only if usernames matches with the user
 
     if (error) {
       console.error("Error fetching profile URL:", error.message);
       return;
-    }
-
+    } 
     if (data) {
-      setPfpUrl(data[0].profile_url); // Set the profile URL
-      setPrevPfpUrl(data[0].profile_url); // Set the previous profile URL to delete whenever new profile picture set
+      for (const d of data) {
+        if (d.profile_url !=null) {
+          setPfpUrl(d.profile_url); // Set the profile URL
+          setPrevPfpUrl(d.profile_url); // Set the previous profile URL to delete whenever new profile picture set
+        }
+      }
+      console.log("img", pfpUrl);
     }
   };
 
@@ -111,10 +117,7 @@ function Avatar() {
       ) : (
         <img
           className={`shadow-xl w-24 h-24 object-cover rounded-full border-2 dark:border-white  border-black `}
-          src={
-            `${pfpUrl}` ||
-            "https://as2.ftcdn.net/v2/jpg/08/23/95/89/1000_F_823958944_1c9covIC7Tl7eyJtWoTiXc0L4vP6f43q.jpg"
-          }
+          src={`${pfpUrl}`}
         />
       )}
       <label htmlFor="file-input">

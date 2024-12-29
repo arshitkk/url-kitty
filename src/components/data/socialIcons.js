@@ -1,7 +1,7 @@
 export const socialIcons = [
   {
     name: "Discord",
-    icon: "https://upload.wikimedia.org/wikipedia/fr/4/4f/Discord_Logo_sans_texte.svg",
+    icon: "https://static.vecteezy.com/system/resources/thumbnails/006/892/623/small_2x/discord-logo-icon-editorial-free-vector.jpg",
   },
   {
     name: "Facebook",
@@ -9,11 +9,11 @@ export const socialIcons = [
   },
   {
     name: "Github",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+    icon: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
   },
   {
     name: "Gmail",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png",
+    icon: "https://w7.pngwing.com/pngs/799/918/png-transparent-mail-google-gmail-google-s-logo-icon-thumbnail.png",
   },
   {
     name: "Instagram",
@@ -29,7 +29,7 @@ export const socialIcons = [
   },
   {
     name: "Quora",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/0/09/Quora_icon.svg",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Quora_icon.svg/800px-Quora_icon.svg.png",
   },
   {
     name: "Reddit",
@@ -49,7 +49,7 @@ export const socialIcons = [
   },
   {
     name: "Threads",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Threads_%28app%29_logo.svg",
+    icon: "https://thumbs.dreamstime.com/b/threads-app-logo-icon-isolated-white-background-293139956.jpg",
   },
   {
     name: "Whatsapp",
@@ -57,10 +57,10 @@ export const socialIcons = [
   },
   {
     name: "X(Twitter)",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpevfm2P0BtgC9LbXH1n2Xp-oR-iLX8xQTBg&s",
   },
   {
     name: "Youtube",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png",
+    icon: "https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png",
   },
 ];

@@ -157,20 +157,20 @@ function PublicPage() {
             {/* Social Links */}
             {socialLinkNotFound ? null : (
               <div>
-                <div className="gap-2 flex flex-col  items-center text-2xl font-semibold">
+                <div className="gap-2 flex flex-col items-center text-2xl font-semibold">
                   <h1>Social Links </h1>
                   <div className="dark:bg-white bg-black h-[0.32rem] w-20 rounded-full"></div>
                 </div>
-                <ul className="flex gap-7 justify-center mt-3 ">
+                <ul className="flex flex-wrap gap-7 justify-center mt-3 ">
                   {socialLinks.map((link, index) => {
                     console.log(link);
                     return (
                       <li
-                        className="hover:scale-[1.3] duration-300 w-14 border rounded-xl p-[0.5rem] border-black/20 shadow-xl"
+                        className="hover:scale-[1.3] duration-300 w-12 max-h-12 border rounded-xl p-[0.2rem] border-black/20 shadow-xl bg-white/40"
                         key={index}
                       >
                         <a href={link.url}>
-                          <img src={`${link.icon}`} alt={link.name} />
+                          <img className=" rounded-lg bg-white p-[0.2rem]" src={`${link.icon}`} alt={link.name} />
                         </a>
                       </li>
                     );
@@ -193,14 +193,14 @@ function PublicPage() {
                     console.log("custom", link);
                     return (
                       <li
-                        className={`border-gray-800 h-full w-80  text-lg  mx-6 rounded-lg p-[0.3rem] border shadow-xl  dark:bg-[#1F2937] hover:scale-[1.08] duration-200 `}
+                        className={`border-gray-800 h-fit w-80  text-lg  mx-6 rounded-lg p-[0.3rem] border-l-0 border shadow-xl  dark:bg-[#1F2937] hover:scale-[1.08] duration-200 `}
                         key={index}
                       >
                         <a href={link.url} className={` h-full w-full `}>
                           <div className=" h-full flex items-center justify-start gap-4">
                             {" "}
                             <img
-                              className="rounded-lg h-14 w-14 object-cover border-2 dark:border-none"
+                              className="rounded-lg h-12 w-12 object-cover border-2 dark:border-none"
                               src={`${
                                 link.icon
                                   ? link.icon

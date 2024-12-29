@@ -65,12 +65,14 @@ function RecentLinks() {
                   className="dark:bg-[#1f293799] h-full w-full rounded-lg p-[0.3rem] border dark:border-[#303f5c] dark:shadow-2xl shadow-md hover:scale-[1.02] duration-200 "
                 >
                   <a href={link.link_url} className="h-full w-full">
-                    <div className="h-full w-full flex items-center justify-start gap-2">
-                      <img
-                        className="rounded-lg h-12 w-12 object-cover"
-                        src={`${link.image}`}
-                        alt={link.link_name}
-                      />
+                    <div className="flex items-center justify-start gap-2">
+                      <div className="bg-white/30 p-[0.2rem] rounded-lg">
+                        <img
+                          className="rounded-lg w-9 h-9 object-cover bg-white p-[0.2rem]"
+                          src={`${link.image}`}
+                          alt={link.link_name}
+                        />
+                      </div>
                       <div className="pl-3">
                         <p className="font-medium break-words">
                           {link.link_name}

@@ -211,26 +211,26 @@ function ManageLinks() {
                           {index + 1}
                         </td>
                         {editRowId != link.id ? (
-                          <td className="py-4 px-4">
+                          <td className="p-3 h-16 w-16">
                             <img
-                              className="h-12 w-12 object-cover rounded-lg"
+                              className=" bg-white p-1 object-contain rounded-lg"
                               src={link.image}
                               alt="Preview"
                             />
                           </td>
                         ) : (
-                          <td className="py-4 px-4">
-                            <div className="relative">
+                          <td className="p-3 h-16 w-16">
+                            <div className=" relative h-full w-full ">
                               <img
-                                className="h-12 w-12 blur-[1px] rounded-md p-1"
+                                className=" bg-white p-1 object-contain rounded-lg"
                                 src={link.image}
                                 alt="Preview"
                               />
                               <label
                                 htmlFor="file-input"
-                                className="absolute top-0 cursor-pointer bg-white/40 border border-black rounded-md flex items-center justify-center h-12 w-12"
+                                className="absolute top-0 cursor-pointer bg-white/30 border border-black rounded-md flex items-center justify-center h-[2.3rem] p-1 w-full"
                               >
-                                <MdEdit className="text-white  bg-black  p-1 h-5 w-5 rounded-full " />
+                                <MdEdit className="text-white  bg-black  p-1 h-6 w-6 rounded-full " />
                               </label>
                             </div>
                             <input

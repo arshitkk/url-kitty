@@ -51,7 +51,7 @@ function Profile() {
           </h1>
           <div className=" w-fit relative transition-all duration-300 group flex flex-col items-center justify-center  ">
             <p className="text-start w-full text-[0.65rem]">your publlic page:</p>
-            <a className="cursor-pointer w-fit flex items-center justify-center gap-1 font-semibold border-2 border-black dark:border-white p-1 rounded-xl ">
+            <a href={`https://url-kitty.vercel.app/${username}`} className="cursor-pointer w-fit flex items-center justify-center gap-1 font-semibold border-2 border-black dark:border-white p-1 rounded-xl ">
               <p>UrlKitty/{username}</p>
               <BsBoxArrowUpRight />
             </a>

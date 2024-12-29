@@ -1,2 +1,20 @@
-export const socials = ['Snapchat', 'Instagram', 'Whatsapp', 'Gmail', 'Github', 'LinkedIn', 'X(Twitter)', 'Facebook', 'Spotify', 'Youtube'];
+export const socials = [
+  "Discord",
+  "Facebook",
+  "Github",
+  "Gmail",
+  "Instagram",
+  "LinkedIn",
+  "Pintrest",
+  "Qoura",
+  "Reddit",
+  "Snapchat",
+  "Spotify",
+  "Telegram",
+  "Threads",
+  "Whatsapp",
+  "X(Twitter)",
+  "Youtube",
+];
+
 

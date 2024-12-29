@@ -19,12 +19,13 @@ function Login() {
       setLoginLoader(true);
       // Call the Supabase logIn function
       const { data, error } = await logIn(email, password);
-      navigate("/profile");
-
       if (error) {
         setInvalidCred(error);
         console.error(error);
         return;
+      }
+      else {
+         navigate("/profile");
       }
 
       if (data?.user?.id) {

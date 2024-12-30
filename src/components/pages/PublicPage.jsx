@@ -190,7 +190,7 @@ function PublicPage() {
                   <div className="dark:bg-white bg-black h-[0.32rem] w-20 rounded-full"></div>
                 </div>
                 <ul
-                  className={`mt-8 h-full w-fit grid gap-y-5 gap-x-11 place-items-center grid-cols-1 lg:grid-cols-3 md:grid-cols-2`}
+                  className={`mt-8 h-full w-fit grid gap-y-5 gap-x-11 place-items-center grid-cols-1 md:grid-cols-2`}
                   // className={` flex gap-x-3 gap-y-5 justify-center mt-5 flex-wrap `}
                 >
                   {customLinks.map((link, index) => {

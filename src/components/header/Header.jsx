@@ -35,21 +35,7 @@ function Header() {
       console.error("Logout error:", error.message);
     }
   };
-  let check;
-  useEffect(() => {
-    function checking() {
-      check = localStorage.getItem("DarkMode");
-      if (check === "true") {
-        setMode("Logo-dark.svg");
-        console.log("dark");
-      }
-      if (check === "false") {
-        setMode("Logo.svg");
-        console.log("light");
-      }
-    }
-    checking();
-  }, [check]);
+
 
   return (
     <nav className="w-full border h-11 border-black/20 flex justify-between items-center p-1  dark:bg-[#1F2937] dark:text-white ease duration-700 ">

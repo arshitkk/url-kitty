@@ -1,6 +1,10 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 import { useEffect, useState } from "react";
 import {
   Footer,
@@ -17,7 +21,6 @@ import {
 function Main() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     // Check session on mount
     const fetchSession = async () => {
@@ -47,7 +50,9 @@ function Main() {
     [
       {
         path: "/",
-        element: (
+        element: loggedIn ? (
+          <Navigate to="/profile" />
+        ) : (
           <>
             <Container>
               <Header />
@@ -107,7 +112,7 @@ function Main() {
           </Container>
         ),
       },
-    ],  
+    ],
     {
       future: {
         v7_relativeSplatPath: true,

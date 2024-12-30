@@ -170,7 +170,11 @@ function PublicPage() {
                         key={index}
                       >
                         <a href={link.url}>
-                          <img className=" rounded-lg bg-white p-[0.2rem]" src={`${link.icon}`} alt={link.name} />
+                          <img
+                            className=" rounded-lg bg-white p-[0.2rem]"
+                            src={`${link.icon}`}
+                            alt={link.name}
+                          />
                         </a>
                       </li>
                     );
@@ -196,7 +200,11 @@ function PublicPage() {
                         className={`border-gray-800 h-fit w-80  text-lg  mx-6 rounded-lg p-[0.3rem] border-l-0 border shadow-xl  dark:bg-[#1F2937] hover:scale-[1.08] duration-200 `}
                         key={index}
                       >
-                        <a href={link.url} className={` h-full w-full `}>
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          className={` h-full w-full `}
+                        >
                           <div className=" h-full flex items-center justify-start gap-4">
                             {" "}
                             <img

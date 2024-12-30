@@ -26,41 +26,52 @@
 
 ### 🌞 Light Mode
 
-**Desktop View**
+**<u>Desktop View:</u>**
 
 <div>
-  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20230152.png" alt="Light Mode Desktop 4" >
-  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224040.png" alt="Light Mode Desktop 1" >
-  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224155.png" alt="Light Mode Desktop 2" >
-  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224214.png" alt="Light Mode Desktop 3" >
+  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20230152.png" alt="screenshot" >
+  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224040.png" alt="screenshot" >
+  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224155.png" alt="screenshot" >
+  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224214.png" alt="screenshot">
 </div>
 
-**Mobile View**
+**<u>Mobile View:</u>**
 
 <div>
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231337_Chrome.png" alt="Light Mode Mobile 1" height="360">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231355_Chrome.png" alt="Light Mode Mobile 2" height="360">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231414_Chrome.png" alt="Light Mode Mobile 3" height="360">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231424_Chrome.png" alt="Light Mode Mobile 4" height="360">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231337_Chrome.png" alt="screenshot"height="360">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231355_Chrome.png" alt="screenshot"height="360">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231414_Chrome.png" alt="screenshot"height="360">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231424_Chrome.png" alt="screenshot" height="360">
 </div>
+
+---
 
 ### 🌙 Dark Mode
 
-**Desktop View**  
-![Dark Mode Desktop](./screenshots/dark-desktop.png)
+**<u>Desktop View:</u>**
 
-**Mobile View**  
-![Dark Mode Mobile](./screenshots/dark-mobile.png)
+<div>
+  <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-30 224102.png" alt="screenshot" >
+  <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-30 224149.png" alt="screenshot" >
+  <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-30 224226.png" alt="screenshot" >
+  <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-30 230131.png" alt="screenshot" >
 
----
+</div>
+
+**<u>Mobile View:</u>**
+
+<div>
+   <img src="./public/Screenshots/mobie/dark/Screenshot_20241230-231343_Chrome.png" height="360" alt="screenshot">`
+   <img src="./public/Screenshots/mobie/dark/Screenshot_20241230-231400_Chrome.png" height="360" alt="screenshot">
+   <img src="./public/Screenshots/mobie/dark/Screenshot_20241230-231411_Chrome.png" height="360" alt="screenshot">
+   <img src="./public/Screenshots/mobie/dark/Screenshot_20241230-231429_Chrome.png" height="360" alt="screenshot">
+ </div>
 
 ## 🛠️ Technologies Used
 
-- **Frontend** – ReactJS, Tailwind CSS
+- **Frontend** – ReactJS, Tailwind CSS, React Router, React Hook Form
 - **Backend** – Supabase (Authentication & Database)
 - **Deployment** – Vercel
-
----
 
 ## 📂 Installation
 
@@ -82,16 +93,15 @@ npm run dev
 
 ## 🐾 A Little Note...
 
-URL Kitty is a small side project I scratched together – it’s free and open source (like a stray cat but cuter). 😿  
-I don’t have a domain yet because my wallet is currently napping. If this project attracts some curious cats (aka active users), I might upgrade it!
+URL Kitty is a small side project I.ve Created – it’s free and open source (like a stray cat but cuter). 😿  
+I don’t have a domain yet because....... i'm broke. If this project attracts some curious cats (aka active users), I might upgrade it!
 
 🔧 Found a bug or have a purr-fect feature idea?
 
 - **Techies** – Head over to GitHub and raise an issue (no hairballs, I promise).
 - **Everyone Else** – Email me at [your-email@example.com].
 
+
 ---
-
-## 📜 License
-
-This project is licensed under the MIT License.
+###### Thank you so much  for reading this, please checkout this project &  give a star if you liked it
+--- 

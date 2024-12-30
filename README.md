@@ -38,10 +38,10 @@
 **Mobile View**
 
 <div>
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231337_Chrome.png" alt="Light Mode Mobile 1" height="400">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231355_Chrome.png" alt="Light Mode Mobile 2" height="400">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231414_Chrome.png" alt="Light Mode Mobile 3" height="400">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231424_Chrome.png" alt="Light Mode Mobile 4" height="400">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231337_Chrome.png" alt="Light Mode Mobile 1" height="300">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231355_Chrome.png" alt="Light Mode Mobile 2" height="300">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231414_Chrome.png" alt="Light Mode Mobile 3" height="300">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231424_Chrome.png" alt="Light Mode Mobile 4" height="300">
 </div>
 
 ### 🌙 Dark Mode

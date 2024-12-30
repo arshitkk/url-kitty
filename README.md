@@ -26,8 +26,7 @@
 
 ### 🌞 Light Mode
 
-**<u>Desktop View:</u>**
-
+- **Desktop View:**
 <div>
   <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20230152.png" alt="screenshot" >
   <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224040.png" alt="screenshot" >
@@ -35,7 +34,7 @@
   <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224214.png" alt="screenshot">
 </div>
 
-**<u>Mobile View:</u>**
+- **Mobile View:**
 
 <div>
   <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231337_Chrome.png" alt="screenshot"height="360">
@@ -48,7 +47,7 @@
 
 ### 🌙 Dark Mode
 
-**<u>Desktop View:</u>**
+- **Desktop View:**
 
 <div>
   <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-30 224102.png" alt="screenshot" >
@@ -58,7 +57,7 @@
 
 </div>
 
-**<u>Mobile View:</u>**
+- **Mobile View:**
 
 <div>
    <img src="./public/Screenshots/mobie/dark/Screenshot_20241230-231343_Chrome.png" height="360" alt="screenshot">`
@@ -101,7 +100,8 @@ I don’t have a domain yet because....... i'm broke. If this project attracts s
 - **Techies** – Head over to GitHub and raise an issue (no hairballs, I promise).
 - **Everyone Else** – Email me at [your-email@example.com].
 
+---
+
+###### Thank you so much for reading this, please checkout this project & give a star if you liked it
 
 ---
-###### Thank you so much  for reading this, please checkout this project &  give a star if you liked it
---- 

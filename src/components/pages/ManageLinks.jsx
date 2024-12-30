@@ -273,7 +273,12 @@ function ManageLinks() {
                           </td>
                         ) : (
                           <td className="py-4 px-4 text-blue-600 dark:text-blue-400">
-                            <a href={link.link_url}>{link.link_url}</a>
+                            <a href={link.link_url}>
+                              {" "}
+                              {link.link_url.length > 30
+                                ? `${link.link_url.slice(0, 30)}...`
+                                : link.link_url}
+                            </a>
                           </td>
                         )}
                         <td className="py-4 px-4 text-gray-500 dark:text-gray-400">

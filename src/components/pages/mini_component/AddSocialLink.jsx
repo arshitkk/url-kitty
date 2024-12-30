@@ -10,7 +10,7 @@ function AddSocialLink() {
   const [link, setLink] = useState();
   const [success, setSucces] = useState(false);
   const [addLinkLoader, setaddLinkLoader] = useState(false);
-
+  const [placeholder, setPlaceholder] = useState("http://");
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
   async function submitHandler(e) {
@@ -81,7 +81,14 @@ function AddSocialLink() {
               className="dark:bg-[#374151] dark:placeholder-[#6B7280]  mt-0 p-2 scroll-mt-0 border w-full border-gray-500 rounded-md focus:outline-none focus:border-gray-300 dark:border-2"
               name="select-platform"
               value={platform}
-              onChange={(e) => setPlatform(e.target.value)} // Update platform with selected value
+              onChange={(e) => {
+                const selectedValue = e.target.value;
+                setPlatform(selectedValue)
+                selectedValue == 'Gmail'
+                  ? setPlaceholder("mailto:example@gmail.com")
+                  : setPlaceholder("http://")
+              }}
+               // Update platform with selected value
             >
               <option className="" value="" disabled>
                 --Select platform--
@@ -106,7 +113,7 @@ function AddSocialLink() {
               value={link}
               className="dark:bg-[#374151] dark:placeholder-[#6B7280]  mt-0 p-2 scroll-mt-0 border w-full border-gray-500 rounded-md focus:outline-none focus:border-gray-300 dark:border-2"
               type="text"
-              placeholder="http://"
+              placeholder={placeholder}
               onChange={(e) => setLink(e.target.value)}
             />
           </div>

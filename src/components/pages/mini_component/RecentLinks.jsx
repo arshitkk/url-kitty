@@ -77,8 +77,10 @@ function RecentLinks() {
                         <p className="font-medium break-words">
                           {link.link_name}
                         </p>
-                        <p className="text-gray-400 text-sm break-words">
-                          {link.link_url}
+                        <p className="text-gray-400 text-sm truncate">
+                          {link.link_url.length > 30
+                            ? `${link.link_url.slice(0, 30)}...`
+                            : link.link_url}
                         </p>
                       </div>
                     </div>

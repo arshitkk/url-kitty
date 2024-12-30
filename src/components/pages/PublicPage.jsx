@@ -197,7 +197,7 @@ function PublicPage() {
                     console.log("custom", link);
                     return (
                       <li
-                        className={`border-gray-800 h-fit w-80  text-lg  mx-6 rounded-lg p-[0.3rem] border-l-0 border shadow-xl  dark:bg-[#1F2937] hover:scale-[1.08] duration-200 `}
+                        className={`border-gray-800 h-fit w-80  text-lg  mx-6 rounded-lg p-[0.3rem] border shadow-xl  dark:bg-[#1F2937] hover:scale-[1.08] duration-200 `}
                         key={index}
                       >
                         <a

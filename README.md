@@ -28,21 +28,20 @@
 
 **Desktop View**
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
-  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20230152.png" alt="Light Mode Desktop 4" style="width: 100%; height: auto;">
-  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224040.png" alt="Light Mode Desktop 1" style="width: 100%; height: auto;">
-  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224155.png" alt="Light Mode Desktop 2" style="width: 100%; height: auto;">
-  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224214.png" alt="Light Mode Desktop 3" style="width: 100%; height: auto;">
- 
+<div>
+  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20230152.png" alt="Light Mode Desktop 4" >
+  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224040.png" alt="Light Mode Desktop 1" >
+  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224155.png" alt="Light Mode Desktop 2" >
+  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224214.png" alt="Light Mode Desktop 3" >
 </div>
 
 **Mobile View**
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; max-width: 100%; margin: 0 auto;">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231337_Chrome.png" alt="Light Mode Mobile 1" style="width: 100%; height: auto; object-fit: cover;">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231355_Chrome.png" alt="Light Mode Mobile 2" style="width: 100%; height: auto; object-fit: cover;">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231414_Chrome.png" alt="Light Mode Mobile 3" style="width: 100%; height: auto; object-fit: cover;">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231424_Chrome.png" alt="Light Mode Mobile 4" style="width: 100%; height: auto; object-fit: cover;">
+<div>
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231337_Chrome.png" alt="Light Mode Mobile 1" height="400">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231355_Chrome.png" alt="Light Mode Mobile 2" height="400">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231414_Chrome.png" alt="Light Mode Mobile 3" height="400">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231424_Chrome.png" alt="Light Mode Mobile 4" height="400">
 </div>
 
 ### 🌙 Dark Mode

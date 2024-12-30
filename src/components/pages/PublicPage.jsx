@@ -169,7 +169,7 @@ function PublicPage() {
                         className="hover:scale-[1.3] duration-300 w-12 max-h-12 border rounded-xl p-[0.2rem] border-black/20 shadow-xl bg-white/40"
                         key={index}
                       >
-                        <a href={link.url}>
+                        <a href={link.url} target="_blank">
                           <img
                             className=" rounded-lg bg-white p-[0.2rem]"
                             src={`${link.icon}`}

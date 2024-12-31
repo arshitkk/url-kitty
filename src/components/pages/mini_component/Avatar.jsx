@@ -14,17 +14,17 @@ function Avatar() {
     const { data, error } = await supabase
       .from("links")
       .select("profile_url, username")
-      .eq("username", username)
-   
+      .eq("username", username);
+
     //it'll return the profile url and username only if usernames matches with the user
 
     if (error) {
       console.error("Error fetching profile URL:", error.message);
       return;
-    } 
+    }
     if (data) {
       for (const d of data) {
-        if (d.profile_url !=null) {
+        if (d.profile_url != null) {
           setPfpUrl(d.profile_url); // Set the profile URL
           setPrevPfpUrl(d.profile_url); // Set the previous profile URL to delete whenever new profile picture set
         }
@@ -117,7 +117,11 @@ function Avatar() {
       ) : (
         <img
           className={`shadow-xl w-24 h-24 object-cover rounded-full border-2 dark:border-white  border-black `}
-          src={`${pfpUrl}`}
+          src={`${
+            pfpUrl
+              ? pfpUrl
+              : "https://hxgwraleluvyyhyegiwu.supabase.co/storage/v1/object/public/link_Images/defaultFiles/Group%201.png"
+          }`}
         />
       )}
       <label htmlFor="file-input">

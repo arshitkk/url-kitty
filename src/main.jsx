@@ -77,7 +77,6 @@ function Main() {
         path: "/login",
         element: (
           <Container>
-            <Header />
             <LogIn />
           </Container>
         ),

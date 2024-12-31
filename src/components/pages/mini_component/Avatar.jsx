@@ -117,11 +117,7 @@ function Avatar() {
       ) : (
         <img
           className={`shadow-xl w-24 h-24 object-cover rounded-full border-2 dark:border-white  border-black `}
-          src={`${
-            pfpUrl
-              ? pfpUrl
-              : "https://hxgwraleluvyyhyegiwu.supabase.co/storage/v1/object/public/link_Images/defaultFiles/Group%201.png"
-          }`}
+          src={`${pfpUrl}`}
         />
       )}
       <label htmlFor="file-input">

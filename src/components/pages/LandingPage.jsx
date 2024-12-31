@@ -10,13 +10,13 @@ function LandingPage() {
           <h1 className=" flex text-4xl sm:text-5xl font-bold text-center">
             Welcome to{" "}
             <p className="pl-2 underline animate-bounce duration-400">
-              UrlKitty!
+              URL-KITTY!
             </p>
           </h1>
           <p className="dark:opacity-60 text-center dark:text-white text-[#4B5563] mt-3">
             The easiest way to organize and share all your links in one place.
             Whether it's for your personal portfolio, social media, or business
-            links, UrlKitty makes it simple and stylish!
+            links, URL-KITTY makes it simple and stylish!
           </p>
         </div>
         <div className="flex flex-col justify-center items-center gap-3 mb-28 sm:mb-0">
@@ -41,14 +41,14 @@ function LandingPage() {
           </h1>
           <div className="dark:bg-white bg-black sm:h-[0.32rem] h-[0.25rem] w-64  sm:w-80 mt-1 mb-1 sm:mt-2 sm:mb-2 rounded-full"></div>
           <p className="dark:text-white text-center text-[#4B5563] mt-2 dark:opacity-60">
-            With UrlKitty, you can build a customized link tree that represents
+            With URL-KITTY, you can build a customized link tree that represents
             you or your brand. Add your favorite links, and share them
             effortlessly. No fuss, just convenience.
           </p>
         </div>
         <div className="flex flex-col items-center mt-11">
           <h1 className="text-2xl sm:text-3xl font-bold ">
-            Why Choose UrlKitty?
+            Why Choose URL-KITTY?
           </h1>
           <div className="dark:bg-white bg-black sm:h-[0.32rem] h-[0.22rem] w-44  sm:w-64 mt-1 mb-1 sm:mt-2 sm:mb-2 rounded-full"></div>
           <div className="flex flex-wrap gap-8 justify-center  px-4 mt-4  ">
@@ -57,7 +57,7 @@ function LandingPage() {
                 Create Multiple Links in One Place
               </h1>
               <p className="dark:text-white text-[#474747] dark:opacity-60 text-center">
-                URL Kitty lets you organize and share multiple links through a
+                URL-KITTY lets you organize and share multiple links through a
                 single, easy-to-access page. Ideal for social media bios,
                 portfolios, or personal websites.
               </p>
@@ -67,7 +67,7 @@ function LandingPage() {
                 Simple and Clean Design
               </h1>
               <p className="text-[#474747] dark:text-white dark:opacity-60 text-center">
-                URL Kitty offers a straightforward, minimalistic layout that
+                URL-KITTY offers a straightforward, minimalistic layout that
                 puts your links front and center, making it easy for visitors to
                 navigate.
               </p>
@@ -77,7 +77,7 @@ function LandingPage() {
                 Completely Free and Open Source
               </h1>
               <p className="text-[#474747] dark:text-white dark:opacity-60 text-center">
-                URL Kitty is 100% free and open source. There are no hidden fees
+                URL-KITTY is 100% free and open source. There are no hidden fees
                 or premium tiers – enjoy unlimited links and full control
                 without paying a dime.
               </p>

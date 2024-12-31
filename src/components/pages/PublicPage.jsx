@@ -122,7 +122,7 @@ function PublicPage() {
               Create Your Own Custom Link Page Now! for FREE!
             </p>
             <button className="bg-black text-white font-medium rounded-md p-4 px-8">
-              <a href="">UrlKitty</a>
+              <a href="">URL-KITTY</a>
             </button>
           </span>
         </div>
@@ -243,7 +243,7 @@ function PublicPage() {
         <p className="mb-5 text-center">
           Create your own custom Page Now!- Go to{" "}
           <a href="#" className="font-bold text-black dark:text-white">
-            UrlKitty
+            URL-KITTY
           </a>
         </p>
       </div>

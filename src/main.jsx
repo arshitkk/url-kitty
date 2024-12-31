@@ -123,7 +123,6 @@ function Main() {
         element: (
           <>
             <Container>
-              <Header />
               <ResetPassword />
             </Container>
             <Footer />

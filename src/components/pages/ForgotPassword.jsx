@@ -55,6 +55,7 @@ function forgotPassword() {
                 setEmail(e.target.value);
                 setError(null);
                 setemptyField(false);
+                setSuccess(false)
               }}
               placeholder="Enter your email"
             />

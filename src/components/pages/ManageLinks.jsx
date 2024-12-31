@@ -290,11 +290,11 @@ function ManageLinks() {
                             <div className="flex gap-3 p-1">
                               {" "}
                               <button onClick={() => updateRow(link.id)}>
-                                <FaRegSave className="text-blue-800" />
+                                <FaRegSave className="text-blue-800 text-2xl" />
                               </button>
                               <button
                                 onClick={() => setEditRowId("")}
-                                className="text-green-600 scale-[1.09]"
+                                className="text-green-600 text-2xl"
                               >
                                 <TiArrowBack />
                               </button>
@@ -302,14 +302,17 @@ function ManageLinks() {
                           ) : (
                             <div className="flex gap-3 p-1">
                               {" "}
-                              <button onClick={() => editModeHandler(link)}>
+                              <button
+                                className="text-xl"
+                                onClick={() => editModeHandler(link)}
+                              >
                                 <FaRegEdit />
                               </button>
                               <button
                                 onClick={() => {
                                   deleteRow(link.id);
                                 }}
-                                className="text-red-600 scale-[1.09]"
+                                className="text-red-600 text-2xl"
                               >
                                 <MdDelete />
                               </button>

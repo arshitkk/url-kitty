@@ -133,8 +133,8 @@ function Login() {
                 />
               )}
             </div>
-            <Link to={'/forgot-password'} className="text-end text-sm font-bold dark:hover:text-blue-500 ">
-              Forgot Password
+            <Link to={'/forgot-password'} className="text-end text-sm font-bold text-blue-400 mt-2 ">
+              Forgot Password?
             </Link>
           </label>
           {invalidCred && (

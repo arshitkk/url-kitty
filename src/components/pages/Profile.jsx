@@ -11,26 +11,62 @@ function Profile() {
   const [username, setUsername] = useState("");
 
   // check user logged in or not
-  useEffect(() => {
-    const fetchUser = async () => {
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
+ useEffect(() => {
+   const fetchUser = async () => {
+     try {
+       const {
+         data: { user },
+       } = await supabase.auth.getUser();
 
-      if (user) {
-        setLoggedIn(true);
-        setDisplayName(user.user_metadata.display_name);
-        setUsername(user.user_metadata.username);
-        console.log("Logged In", user.user_metadata.display_name);
-      } else {
-        setLoggedIn(false);
-        console.log("Logged Out");
-      }
-    };
-    console.log();
+       if (user) {
+         setLoggedIn(true);
+         setDisplayName(user.user_metadata.display_name);
+         setUsername(user.user_metadata.username);
+         console.log("Logged In", user.user_metadata.display_name, user);
 
-    fetchUser();
-  }, []);
+         // Check if the user already exists in the database
+         const { data: existingUser, error: checkError } = await supabase
+           .from("links")
+           .select("*")
+           .match({ user_id: user.id });
+
+         if (checkError) {
+           console.error("Error checking user profile:", checkError.message);
+         } else if (existingUser.length === 0) {
+           // If it's the first time login, insert default data
+           const { username, email, display_name } = user.user_metadata;
+           const { error: insertError } = await supabase.from("links").insert([
+             {
+               user_id: user.id,
+               username: username,
+               email: email,
+               full_name: display_name,
+               profile_url:
+                 "https://hxgwraleluvyyhyegiwu.supabase.co/storage/v1/object/public/link_Images/defaultFiles/Group%201.png",
+             },
+           ]);
+
+           if (insertError) {
+             console.error(
+               "Error inserting new user profile:",
+               insertError.message
+             );
+           } else {
+             console.log("New user created with default data");
+           }
+         }
+       } else {
+         setLoggedIn(false);
+         console.log("Logged Out");
+       }
+     } catch (error) {
+       console.error("Unexpected error:", error.message);
+     }
+   };
+
+   fetchUser();
+ }, []);
+
   return loggedIn ? (
     <div className="pl-2 m-5 mt-16  dark:text-white">
       <div className="dark:bg-[#141d2f] mb-3 p-2 rounded-xl shadow-lg">

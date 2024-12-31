@@ -1,5 +1,4 @@
 import Header from "./src/components/header/Header";
-import HeaderForFirstLogin from "./src/components/header/HeaderForFirstLogin";
 import Footer from "./src/components/footer/Footer";
 import Container from "./src/components/container/Container";
 //Pages
@@ -16,7 +15,7 @@ import { logIn, signUp, logOut } from "./src/supabase/authLogin";
 import { supabase } from "./src/supabase/config";
 export {
   Header,
-  HeaderForFirstLogin,
+
   Footer,
   Container,
   LandingPage,

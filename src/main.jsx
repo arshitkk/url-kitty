@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import {
   Footer,
   Header,
+  HeaderForFirstLogin,
   Container,
   LandingPage,
   LogIn,
@@ -77,6 +78,16 @@ function Main() {
         path: "/login",
         element: (
           <Container>
+            <Header />
+            <LogIn />
+          </Container>
+        ),
+      },
+      {
+        path: "/first-login",
+        element: (
+          <Container>
+            <HeaderForFirstLogin />
             <LogIn />
           </Container>
         ),

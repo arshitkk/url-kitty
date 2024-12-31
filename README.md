@@ -28,8 +28,8 @@
 
 - **Desktop View:**
 <div>
-  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20230152.png" alt="screenshot" >
-  <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224040.png" alt="screenshot" >
+  <img src="./public/Screenshots/desktop/light/Screenshot 2024-12-31 212942.png" alt="screenshot" >
+  <img src="./public/Screenshots/desktop/light/Screenshot 2024-12-31 213051.png" alt="screenshot" >
   <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224155.png" alt="screenshot" >
   <img src="./public/Screenshots/desktop/light/Screenshot%202024-12-30%20224214.png" alt="screenshot">
 </div>
@@ -50,10 +50,10 @@
 - **Desktop View:**
 
 <div>
-  <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-30 224102.png" alt="screenshot" >
+  <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-31 212916.png" alt="screenshot" >
+  <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-31 213059.png" alt="screenshot" >
   <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-30 224149.png" alt="screenshot" >
   <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-30 224226.png" alt="screenshot" >
-  <img src="./public/Screenshots/desktop/dark/Screenshot 2024-12-30 230131.png" alt="screenshot" >
 
 </div>
 

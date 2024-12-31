@@ -9,7 +9,7 @@ function LandingPage() {
         <div className="flex flex-col justify-center items-center max-w-[50rem] w-full px-4">
           <h1 className=" flex text-4xl sm:text-5xl font-bold text-center">
             Welcome to{" "}
-            <p className="pl-2 underline animate-bounce duration-400">
+            <p className="text-3xl pl-2 underline animate-pulse ease duration-400">
               URL-KITTY!
             </p>
           </h1>

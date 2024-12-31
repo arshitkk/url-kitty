@@ -254,7 +254,7 @@ function SignUp() {
         </form>
         <div className="flex items-center justify-center">
           {success && (
-            <p className=" text-green-600 dark:bg-green-400 text-center w-56 duration-300">
+            <p className=" text-green-600 dark:text-green-400 text-center w-56 duration-300">
               Go to the your mail app (eg. Gmail) to confirm your e-Mail
             </p>
           )}

@@ -23,11 +23,10 @@ function Login() {
         setInvalidCred(error);
         console.error(error);
         setLoginLoader(false);
-        setCredWarning(false)
+        setCredWarning(false);
         return;
-      }
-      else {
-         navigate("/profile");
+      } else {
+        navigate("/profile");
       }
 
       if (data?.user?.id) {
@@ -55,7 +54,7 @@ function Login() {
                 full_name: fullName,
 
                 profile_url:
-                  "https://hxgwraleluvyyhyegiwu.supabase.co/storage/v1/object/public/link_Images/defaultFiles/Logo.svg",
+                  "https://hxgwraleluvyyhyegiwu.supabase.co/storage/v1/object/public/link_Images/defaultFiles/Group%201.png",
               },
             ]);
 
@@ -75,8 +74,7 @@ function Login() {
           setLoginLoader(false);
         }
       }
-    }
-    else {
+    } else {
       setCredWarning(true);
     }
   };
@@ -133,7 +131,10 @@ function Login() {
                 />
               )}
             </div>
-            <Link to={'/forgot-password'} className="text-end text-sm font-bold text-blue-400 mt-2 ">
+            <Link
+              to={"/forgot-password"}
+              className="text-end text-sm font-bold text-blue-400 mt-2 "
+            >
               Forgot Password?
             </Link>
           </label>

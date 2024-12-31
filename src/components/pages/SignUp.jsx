@@ -60,7 +60,7 @@ function SignUp() {
         info.fullName,
         info.username,
         {
-          redirectTo: "https://url-kitty.vercel.app/first-login       ",
+          redirectTo: "https://url-kitty.vercel.app/login       ",
         }
       );
       if (error) {

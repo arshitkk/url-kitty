@@ -59,9 +59,10 @@ function SignUp() {
         info.password,
         info.fullName,
         info.username,
-      {
-        redirectTo: "https://url-kitty.vercel.app/login       ",
-      });
+        {
+          redirectTo: "https://url-kitty.vercel.app/first-login       ",
+        }
+      );
       if (error) {
         alert(error.message); // Show any other errors
         console.log(data, error);

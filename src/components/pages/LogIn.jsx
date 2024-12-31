@@ -21,58 +21,12 @@ function Login() {
       const { data, error } = await logIn(email, password);
       if (error) {
         setInvalidCred(error);
-        console.error(error);
         setLoginLoader(false);
         setCredWarning(false);
         return;
       } else {
         navigate("/profile");
-      }
-
-      if (data?.user?.id) {
-        try {
-          // Check if the user already exists in the database
-          const { data: existingUser, error: checkError } = await supabase
-            .from("links")
-            .select("*")
-            .match({ user_id: data.user.id });
-
-          if (checkError) {
-            console.error("Error checking user profile:", checkError.message);
-          } else if (existingUser.length === 0) {
-            // If its first time login , insert  default data
-            const { data: user, error: userError } =
-              await supabase.auth.getUser();
-            const username = user.user.user_metadata?.username;
-            const emailaddress = user.user.user_metadata?.email;
-            const fullName = user.user.user_metadata.display_name;
-            const { error: insertError } = await supabase.from("links").insert([
-              {
-                user_id: data.user.id,
-                username: username,
-                email: emailaddress,
-                full_name: fullName,
-
-                profile_url:
-                  "https://hxgwraleluvyyhyegiwu.supabase.co/storage/v1/object/public/link_Images/defaultFiles/Group%201.png",
-              },
-            ]);
-
-            if (insertError) {
-              console.error(
-                "Error inserting new user profile:",
-                insertError.message
-              );
-            } else {
-              console.log("New user created with default data");
-            }
-          }
-        } catch (error) {
-          console.error("Unexpected error:", error.message);
-        } finally {
-          console.log("User logged in successfully:", data);
-          setLoginLoader(false);
-        }
+        setLoginLoader(false);
       }
     } else {
       setCredWarning(true);

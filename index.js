@@ -15,7 +15,6 @@ import { logIn, signUp, logOut } from "./src/supabase/authLogin";
 import { supabase } from "./src/supabase/config";
 export {
   Header,
-
   Footer,
   Container,
   LandingPage,

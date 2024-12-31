@@ -13,6 +13,7 @@ function SignUp() {
   const [usernameExist, setUsernameExist] = useState(false);
   const [loginLoader, setLoginLoader] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [showPass, setShowPass] = useState(false);
   const {
     register,
     handleSubmit,

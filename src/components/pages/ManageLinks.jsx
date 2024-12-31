@@ -16,6 +16,7 @@ function ManageLinks() {
   const [icon, setIcon] = useState(null);
   const [iconUrl, setIconUrl] = useState();
   //date conversion
+  let prevIcon;
   function getDate(input) {
     const date = new Date(`${input}`).toLocaleString();
     return date.toString();
@@ -27,6 +28,7 @@ function ManageLinks() {
       data: { user },
     } = await supabase.auth.getUser();
     if (user) {
+      prevIcon = user.user_metadata.image;
       const { data: links, error } = await supabase.from("links").select("*");
       if (links) {
         const filteredLinks = links.filter(
@@ -50,7 +52,6 @@ function ManageLinks() {
     setIconUrl(link.image);
     setUpdatedNameValue(link.link_name);
     setUpdatedUrlValue(link.link_url);
-    console.log("yahan dekh mc ->", iconUrl);
   }
 
   // Delete Row

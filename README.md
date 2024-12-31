@@ -37,8 +37,8 @@
 - **Mobile View:**
 
 <div>
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231337_Chrome.png" alt="screenshot"height="360">
-  <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231355_Chrome.png" alt="screenshot"height="360">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241231-214243_Chrome.png" alt="screenshot"height="360">
+  <img src="./public/Screenshots/mobie/light/Screenshot_20241231-214252_Chrome.png" alt="screenshot"height="360">
   <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231414_Chrome.png" alt="screenshot"height="360">
   <img src="./public/Screenshots/mobie/light/Screenshot_20241230-231424_Chrome.png" alt="screenshot" height="360">
 </div>
@@ -60,8 +60,8 @@
 - **Mobile View:**
 
 <div>
-   <img src="./public/Screenshots/mobie/dark/Screenshot_20241230-231343_Chrome.png" height="360" alt="screenshot">`
-   <img src="./public/Screenshots/mobie/dark/Screenshot_20241230-231400_Chrome.png" height="360" alt="screenshot">
+   <img src="./public/Screenshots/mobie/dark/Screenshot_20241231-214240_Chrome.png" height="360" alt="screenshot">`
+   <img src="./public/Screenshots/mobie/dark/Screenshot_20241231-214256_Chrome.png" height="360" alt="screenshot">
    <img src="./public/Screenshots/mobie/dark/Screenshot_20241230-231411_Chrome.png" height="360" alt="screenshot">
    <img src="./public/Screenshots/mobie/dark/Screenshot_20241230-231429_Chrome.png" height="360" alt="screenshot">
  </div>

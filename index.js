@@ -8,6 +8,8 @@ import LogIn from "./src/components/pages/LogIn";
 import Profile from "./src/components/pages/Profile";
 import PublicPage from "./src/components/pages/PublicPage";
 import ManageLinks from "./src/components/pages/ManageLinks";
+import ForgotPassword from "./src/components/pages/ForgotPassword";
+import ResetPassword from "./src/components/pages/ResetPassword";
 // auths and Config
 import { logIn, signUp, logOut } from "./src/supabase/authLogin";
 import { supabase } from "./src/supabase/config";
@@ -24,5 +26,7 @@ export {
   logOut,
   Profile,
   PublicPage,
-  ManageLinks
+  ManageLinks,
+  ForgotPassword,
+  ResetPassword
 };

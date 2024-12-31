@@ -17,6 +17,8 @@ import {
   PublicPage,
   ManageLinks,
   supabase,
+  ForgotPassword,
+  ResetPassword
 } from "../index.js";
 function Main() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -99,6 +101,30 @@ function Main() {
             <Container>
               <Header />
               <ManageLinks />
+            </Container>
+            <Footer />
+          </>
+        ),
+      },
+      {
+        path: "/forgot-password",
+        element: (
+          <>
+            <Container>
+              <Header />
+              <ForgotPassword />
+            </Container>
+            <Footer />
+          </>
+        ),
+      },
+      {
+        path: "/reset-password",
+        element: (
+          <>
+            <Container>
+              <Header />
+              <ResetPassword />
             </Container>
             <Footer />
           </>
